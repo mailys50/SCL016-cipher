@@ -1,0 +1,351 @@
+body{
+    position: relative;/* El posicionamiento relativo desplaza una caja respecto de su posición original establecida mediante el posicionamiento normal.*/
+    margin:8px ;
+    margin-top: 8px; /*margen superior*/
+    margin-right: 8px;/*margen derecho*/
+    margin-bottom: 8px;/*margen inferior*/
+    margin-left: -31px;/*margen izquierdo*/
+    height: 1366px;/*margen altura*/
+    background: rgba(248, 72, 201, 0.60);  
+}
+
+    .segundaVista{
+        display:none;
+    }
+    .instruccion{
+        display: none;
+    }
+h1, h2, h3, h4, h5{
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #1565c0
+}
+h1{
+    width: 640px;
+    height: 58px;
+    left: 192px;
+    top: 70px;
+    font-size: 50px; /*tamaño texto*/
+    line-height: 59px; /*entre lineado*/
+    color: #1565c0
+}
+h2{
+    width: 199px;
+    height: 47px;
+    left: 423px;
+    top: 160px;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+
+  }
+  h3{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    width: 763px;
+    height: 68px;
+    left: 159px;
+    top: 410px;
+    font-size: 35px;
+    line-height: 41px;
+    color: #000000;
+}
+h4{
+    width: 193px;
+    height: 35px;
+    left: 416px;
+    top: 493px; 
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+
+}
+  .titulo1{
+    width: 101px;
+    height: 33px;
+    left: 462px;
+    top: 547px;
+    font-size: 28px;
+    line-height: 35px;
+    color: #000000;
+
+}
+.titulo2{
+    width: 146px;
+    height: 33px;
+    left: 439px;
+    top: 886px;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+}
+  .description{
+    position: absolute;
+    width: 919px;
+    height: 105px;
+    left: 62px;
+    top: 293px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+}
+.imagen1{
+    position: absolute;
+    width: 521px;
+    height: 443px;
+    left: 251px;
+    top: 462px;
+    background: url(fondoP.jpg);
+    opacity: 0.65;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+  }
+  .regla{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    background: rgba(192, 21, 21, 0.25);
+    color: white;
+    border-radius: 50px;
+  }
+  .regla1{
+    position: absolute;
+    width: 179px;
+    height: 73px;
+    left: 440px;
+    top: 993px;
+   
+}
+  .botonIniciar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+    position: absolute;
+    width: 184px;
+    height: 115px;
+    left: 420px;
+    top: 1175px;
+    border-radius: 50px;
+    background:rgba(21, 101, 192, 0.7);
+    color:white ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+}
+.imagen2{
+    position: absolute;
+    width: 234px;
+    height: 180px;
+    left: 395px;
+    top: 240px;
+    background: url(fondoP.jpg);
+    opacity: 0.65;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+} 
+
+.regla2{
+    position: absolute;
+    width: 179px;
+    height: 73px;
+    left: 421px;
+    top: 506px;
+}
+.textoPalabra{
+    position: absolute;
+    width: 357px;
+    height: 81px;
+    left: 339px;
+    top: 593px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000  
+}
+.PalabraUsuario{
+    position: absolute;
+    width: 314px;
+    height: 51px;
+    left: 355px;
+    top: 651px;
+    font-size: 40px;
+    line-height: 45px;
+    background: rgba(128, 4, 251, 0.10); 
+}
+.textoClave{
+    position: absolute;
+    width: 338px;
+    height: 58px;
+    left:343px;
+    top: 753px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+}
+#numeroClave{
+    position: absolute;
+    width: 111px;
+    height: 48px;
+    left: 457px;
+    top: 800px;
+    font-size: 40px;
+    line-height: 45px;
+    background: rgba(128, 4, 251, 0.10)
+}
+.resultado{
+    position: absolute;
+    width: 314px;
+    height: 148px; 
+    left: 355px;
+    top: 946px;
+    font-size: 40px;
+    line-height: 45px;
+    background: rgba(128, 4, 251, 0.10);
+}
+.botonCifrar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+    position: absolute;
+    width: 181px;
+    height: 115px;
+    left: 155px;
+    top: 1178px;
+    background: rgba(21, 101, 192, 0.7);
+    border-radius: 50px;
+    color:white ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    align-items: center;
+
+}
+.botonDescifrar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+    position: absolute;
+    width: 236px;
+    height: 115px;
+    left: 680px;
+    top: 1178px;
+    background: rgba(21, 101, 192, 0.7);
+    border-radius: 50px;
+    color:white ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+.botonVolver{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+    position: absolute;
+    width: 188px;
+    height: 115px;
+    left: 799px;
+    top: 131px;  
+    background: rgba(21, 101, 192, 0.5);
+    border-radius: 50px;
+    color:white ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+}
+.textoMensaje{
+    position: absolute;
+    width: 136px;
+    height: 35px;
+    left: 444px;
+    top: 899px;
+    font-family: Roboto;
+    font-style: normal; 
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+}
+
+.parrafo1, .parrafo2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;    
+    color: #000000;}
+.parrafo1{
+    position: absolute;
+    width: 620px;
+    height: 293px;
+    left: 202px;
+    top: 609px; 
+}
+ .parrafo2{
+    position: absolute;
+    width: 620px;
+    height: 172px;
+    left: 202px;
+    top: 951px;
+ }
+.botonReset{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+    position: absolute;
+    width: 169px;
+    height: 115px;
+    left: 428px;
+    top: 1190px;
+    border-radius: 50px;
+    background: rgba(192, 21, 21, 0.21);
+    color:white ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+}
+  
+  
+
+
+
+
