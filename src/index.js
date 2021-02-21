@@ -1,8 +1,8 @@
 import cipher from './cipher.js';
-// funcion para pasar de una vista a la otra("block" para que permanesca abierta y "none" para que permanesca cerrada)
+// función para pasar de una vista a la otra("block" para que permanezca abierta y "none" para que permanezca cerrada)
 let redirectCipher = (clase) =>
 {
-  var vistas = [".iniciar", ".segundaVista",".instruccion"];
+  let vistas = [".iniciar", ".segundaVista",".instruccion"];
   for (let i = 0; i < vistas.length; i++) {
     if (clase==vistas[i]) {
       document.querySelector(vistas[i]).style.display="block";
@@ -20,31 +20,25 @@ document.getElementById("botonInstruccion2").addEventListener("click",()=>{redir
 document.getElementById("botonVolver").addEventListener("click",()=>{redirectCipher(".iniciar")});
 document.getElementById("botonVolver1").addEventListener("click",()=>{redirectCipher(".iniciar")});
 
-
-
-
-
-// obtener el valor a cifrar colocado por el usuario
+// obtener el valor a cifrar, que colocó el usuario
 document.getElementById("botonCifrar1").addEventListener("click", () => {
 
   let string= document.getElementById("mensajeCifrar").value;
-  let offset=document.getElementById("numeroClave").value;
-
-  //imprimir la palabra cifrada
+  let offset=document.getElementById("numeroClave").value; 
   try {
-    document.getElementById("root").innerHTML=cipher.encode(string,offset);
+    document.getElementById("root").innerHTML=cipher.encode(string,offset);  //imprimir la palabra cifrada y manejo de errores
   } catch (error) {
     alert(error.message);
   }
 });
 
-// obtenetr el valor a descifrar colocado por el usuario
+// obtener el valor a descifrar  
 document.getElementById("botonDescifrar1").addEventListener("click", () => {
 
   let string= document.getElementById("mensajeCifrar").value;
   let offset=document.getElementById("numeroClave").value;
 
- //imprimir la palabra cifrada 
+ //imprimir la palabra cifrada y manejo de errores
   try {
     document.getElementById("root").innerHTML=cipher.decode(string,offset);
   } catch (error) {

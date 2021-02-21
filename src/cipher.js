@@ -3,9 +3,10 @@ const cipher = {
   //funcion cifrar en mayusculas
 
   encode(string, offset) {
+   
     let cifrar = "";
-
-
+      
+//contolador de errores
     if (string == "" || string == 0 || string == null || string == []) {
 
       throw new TypeError("el caracter introducido no esta permitido");
@@ -40,14 +41,13 @@ const cipher = {
   decode(string, offset) {
     let descifrar = "";
 
+    //control de errores
       if (string == "" || string == 0 || string == null || string == []) {
-        //alert("el caracter introducido no esta permitido");
-        throw new TypeError("el caracter introducido no esta permitido");
+ throw new TypeError("el caracter introducido no esta permitido");
 
       }
       if (offset == "" || offset == 0 || offset == null || offset == []) {
-        //alert("el string introducido no esta permitido");
-        throw new TypeError("el offset introducido no esta permitido");
+       throw new TypeError("el offset introducido no esta permitido");
 
       }
 
