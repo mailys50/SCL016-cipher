@@ -10,7 +10,7 @@ Analice el proyecto sobre lo que se quiere:
 -coloque "cmd" 
 -luego clic a aceptar y se abre la terminar.
 # Instalar el node.js
- -dentro de la termina rebizar si tengo instalado  por ejemplo el node se coloca "node --version" o "node -v" y sale la version del node que tienes instalado. 
+ -dentro de la terminal rebizar si tengo instalado  por ejemplo el node se coloca "node --version" o "node -v" y sale la version del node que tienes instalado. 
 -igual se reviso si npm esta instalado "npm --version" 
 -En caso de que no este instalado en la terminal colocamos "npm install npm".
 # Buscar la ubicacion del archivo en la terminal
