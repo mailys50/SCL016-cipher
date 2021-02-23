@@ -8,83 +8,80 @@
 </head>
 
 <body>
-  
-  <aside lang="es">
-
-    <!--vista principal-->
-    <div class="iniciar">
-      <header class="header">
-        <h1>SECRET MESSAGE</h1>
-        <h2>LOVE KEY</h2>
-      </header>
-      <main>
-        <!--aqui va el centro o lo principal del contenido-->
-        <section>
-          <p class="description"> CIFRA TU MENSAJE EN CLAVES SECRETAS, ENVIALO A ESA <br> PERSONA ESPECIAL . QUIEN PODRA
-            DESCUBRIR <br>
-            EL MENSAJE OCULTO</p>
-          <img src="fondoP.jpg" alt="imagen principal corazon" class="imagen1" id="imagenInicio">
-        </section>
-        <input type="button" class="regla regla1" id="botonInstruccion" value="INSTRUCCION">
-        <button type="button" class="botonIniciar" id="botonIniciar">INICIAR</button>
-      </main>
-    </div>
+  <!--vista principal-->
+  <div class="iniciar">
+    <header class="header">
+      <h1>SECRET MESSAGE</h1>
+      <h2>LOVE KEY</h2>
+    </header>
+    <main>
+      <!--aqui va el centro o lo principal del contenido-->
+      <section>
+        <p class="description"> CIFRA TU MENSAJE EN CLAVES SECRETAS, ENVIALO A ESA <br> PERSONA ESPECIAL . QUIEN PODRA
+          DESCUBRIR <br>
+          EL MENSAJE OCULTO</p>
+        <img src="fondoP.jpg" alt="imagen principal corazon" class="imagen1" id="imagenInicio">
+      </section>
+      <input type="button" class="regla regla1" id="botonInstruccion" value="INSTRUCCION">
+      <button type="button" class="botonIniciar" id="botonIniciar">INICIAR</button>
+    </main>
+  </div>
 
 
-    <!--segunda vistas-->
-    <div class="segundaVista container ">
-      <header class="header">
-        <h1>SECRET MESSAGE</h1>
-        <h2>LOVE KEY</h2>
-      </header>
-      <main>
-        <section>
-          <img src="fondoP.jpg" alt="imagen corazon " class="imagen2">
-          <h3>BIENVENIDO A LA MENSAJERIA DEL AMOR</h3>
-          <input type="button" class="regla regla2" id="botonInstruccion2" value="INSTRUCCION">
-        </section>
-        <section>
-          <form id="formulario" action="cipher.js">
-            <label for="textoPalabra" class="textoPalabra">ESCRIBE TU PALABRA</label>
-            <input type="text" class="PalabraUsuario" id="mensajeCifrar">
-            <label for="" class="textoClave">ESCRIBE TU CLAVE</label>
-            <input type="number" id="numeroClave">
-            <label for="" class="textoMensaje">MENSAJE</label>
-            <div name="" class="resultado" id="root">
-            </div>
-            <button type="button" class="botonCifrar" id="botonCifrar1">CIFRAR</button>
-            <button type="button" class="botonDescifrar" id="botonDescifrar1">DESCIFRAR</button>
-            <input type="reset" id="botonReset" class="botonReset" value="reset">
-            <button type="button" class="botonVolver" id="botonVolver">VOLVER</button>
-          </form>
-        </section>
-      </main>
-    </div>
-
-
-    <!--Instrucción-->
-    <div class="instruccion container">
-      <header class="header">
-        <h1>SECRET MESSAGE</h1>
-        <h2>LOVE KEY</h2>
-      </header>
-      <main>
+  <!--segunda vistas-->
+  <div class="segundaVista container ">
+    <header class="header">
+      <h1>SECRET MESSAGE</h1>
+      <h2>LOVE KEY</h2>
+    </header>
+    <main>
+      <section>
+        <img src="fondoP.jpg" alt="imagen corazon " class="imagen2">
         <h3>BIENVENIDO A LA MENSAJERIA DEL AMOR</h3>
-        <img src="fondoP.jpg" alt="" class="imagen2">
-        <h3>BIENVENIDO A LA MENSAJERIA DEL AMOR</h3>
-        <h4>INSTRUCCION</h4>
-        <h5 class="titulo1">CIFRAR:</h5>
-        <p class="parrafo1">Debes enviar las palabra del mensaje una a una para hacerlo mas interesante ejemplo:
-          si el mensaje es “ ERES ESPECIAL”, debes enviar primero ”eres” y Luego “especial”
-          si lo quieres con mas grado de dificultad enviar desordenado, solo debes indicar a quien lo
-          resiva que despues de cifrar debe descubrir el mensaje.</p>
-        <h5 class="titulo2">DESCIFRAR</h5>
-        <p class="parrafo2">Para descifarlo debes recibir la palabra secreta y la llave que abre el codigo.</p>
-        <button type="button" class="botonCifrar" id="botonCifrar2">CIFRAR</button>
-        <button type="button" class="botonDescifrar" id="botonDescifrar2">DESCIFRAR</button>
-        <button type="button" class="botonVolver" id="botonVolver1">VOLVER</button>
-      </main>
-    </div>
+        <input type="button" class="regla regla2" id="botonInstruccion2" value="INSTRUCCION">
+      </section>
+      <section>
+        <form id="formulario" action="cipher.js">
+          <label for="textoPalabra" class="textoPalabra">ESCRIBE TU PALABRA</label>
+          <input type="text" class="palabraUsuario" id="mensajeCifrar">
+          <label for="" class="textoClave">ESCRIBE TU CLAVE</label>
+          <input type="number" id="numeroClave">
+          <label for="" class="textoMensaje">MENSAJE</label>
+          <div name="" class="resultado" id="root">
+          </div>
+          <button type="button" class="botonCifrar" id="botonCifrar1">CIFRAR</button>
+          <button type="button" class="botonDescifrar" id="botonDescifrar1">DESCIFRAR</button>
+          <input type="reset" id="botonReset" class="botonReset" value="reset">
+          <button type="button" class="botonVolver" id="botonVolver">VOLVER</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+
+  <!--Instrucción-->
+  <div class="instruccion container">
+    <header class="header">
+      <h1>SECRET MESSAGE</h1>
+      <h2>LOVE KEY</h2>
+    </header>
+    <main>
+      <h3>BIENVENIDO A LA MENSAJERIA DEL AMOR</h3>
+      <img src="fondoP.jpg" alt="" class="imagen2">
+      <h3>BIENVENIDO A LA MENSAJERIA DEL AMOR</h3>
+      <h4>INSTRUCCION</h4>
+      <h5 class="titulo1">CIFRAR:</h5>
+      <p class="parrafo1">Debes enviar las palabra del mensaje una a una para hacerlo mas interesante ejemplo:
+        si el mensaje es “ ERES ESPECIAL”, debes enviar primero ”eres” y Luego “especial”
+        si lo quieres con mas grado de dificultad enviar desordenado, solo debes indicar a quien lo
+        resiva que despues de cifrar debe descubrir el mensaje.</p>
+      <h5 class="titulo2">DESCIFRAR</h5>
+      <p class="parrafo2">Para descifarlo debes recibir la palabra secreta y la llave que abre el codigo.</p>
+      <button type="button" class="botonCifrar" id="botonCifrar2">CIFRAR</button>
+      <button type="button" class="botonDescifrar" id="botonDescifrar2">DESCIFRAR</button>
+      <button type="button" class="botonVolver" id="botonVolver1">VOLVER</button>
+    </main>
+  </div>
   </aside>
   <script src="index.js" type="module"></script>
 </body>
