@@ -1,8 +1,8 @@
 import cipher from './cipher.js';
-// función para pasar de una vista a la otra("block" para que permanezca abierta y "none" para que permanezca cerrada)
+// funcion para pasar de una vista a la otra("block" para que permanesca abierta y "none" para que permanesca cerrada)
 let redirectCipher = (clase) =>
 {
-  let vistas = [".iniciar", ".segundaVista",".instruccion"];
+  var vistas = [".iniciar", ".segundaVista",".instruccion"];
   for (let i = 0; i < vistas.length; i++) {
     if (clase==vistas[i]) {
       document.querySelector(vistas[i]).style.display="block";
@@ -20,25 +20,31 @@ document.getElementById("botonInstruccion2").addEventListener("click",()=>{redir
 document.getElementById("botonVolver").addEventListener("click",()=>{redirectCipher(".iniciar")});
 document.getElementById("botonVolver1").addEventListener("click",()=>{redirectCipher(".iniciar")});
 
-// obtener el valor a cifrar, que colocó el usuario
+
+
+
+
+// obtener el valor a cifrar colocado por el usuario
 document.getElementById("botonCifrar1").addEventListener("click", () => {
 
   let string= document.getElementById("mensajeCifrar").value;
-  let offset=document.getElementById("numeroClave").value; 
+  let offset=document.getElementById("numeroClave").value;
+
+  //imprimir la palabra cifrada
   try {
-    document.getElementById("root").innerHTML=cipher.encode(string,offset);  //imprimir la palabra cifrada y manejo de errores
+    document.getElementById("root").innerHTML=cipher.encode(string,offset);
   } catch (error) {
     alert(error.message);
   }
 });
 
-// obtener el valor a descifrar  
+// obtenetr el valor a descifrar colocado por el usuario
 document.getElementById("botonDescifrar1").addEventListener("click", () => {
 
   let string= document.getElementById("mensajeCifrar").value;
   let offset=document.getElementById("numeroClave").value;
 
- //imprimir la palabra cifrada y manejo de errores
+ //imprimir la palabra cifrada 
   try {
     document.getElementById("root").innerHTML=cipher.decode(string,offset);
   } catch (error) {
@@ -49,6 +55,10 @@ document.getElementById("botonDescifrar1").addEventListener("click", () => {
 
 
 });
+
+
+
+
 
 
 
